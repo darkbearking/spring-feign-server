@@ -1,0 +1,11 @@
+server:
+  port: 8761
+spring: 
+  application:
+    name: spring-feign-server
+eureka:
+  client: 
+    #自己是注册中心，是否要将自己注册到注册中心去,集群的时候需要设置为true
+    register-with-eureka: true
+    #自己是注册中心，不需要去检索服务信息
+    fetch-registry: false
